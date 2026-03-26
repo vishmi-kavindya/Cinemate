@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>TV Shows – CineMate</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" class="nav-toggle-cb"/>
+<nav class="navbar">
+  <a href="index.html" class="logo"><span class="logo-icon">🎬</span><span>Cine<em>Mate</em></span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="tv-shows.html" class="active">TV Shows</a></li>
+    <li><a href="favourites.html">Favourites</a></li>
+  </ul>
+  <label for="nav-toggle" class="hamburger">&#9776;</label>
+</nav>
+
+<section class="inner-hero tv-hero" style="background-image:url('https://image.tmdb.org/t/p/w780/ggFHVNu6YYI5L9pCfOacjizRGt.jpg')">
+  <div class="inner-hero-overlay"></div>
+  <div class="ih-content">
+    <h1>📺 All <em>TV Shows</em></h1>
+    <p>Stream the best series · Select a genre · Click any card to see full details &amp; trailer</p>
+  </div>
+</section>
+
+<input type="radio" name="ttab" id="t-all" class="tab-r" checked/>
+<input type="radio" name="ttab" id="t-dra" class="tab-r"/>
+<input type="radio" name="ttab" id="t-thr" class="tab-r"/>
+<input type="radio" name="ttab" id="t-com" class="tab-r"/>
+<input type="radio" name="ttab" id="t-sci" class="tab-r"/>
+<input type="radio" name="ttab" id="t-cri" class="tab-r"/>
+<input type="radio" name="ttab" id="t-fan" class="tab-r"/>
+
+<div class="tv-page-wrap">
+  <form class="filter-bar" action="#" method="get">
+    <div class="filter-group">
+      <select name="genre" class="filter-select"><option>All Genres</option><option>Drama</option><option>Comedy</option><option>Thriller</option><option>Sci-Fi</option><option>Crime</option><option>Fantasy</option></select>
+      <select name="year" class="filter-select"><option>All Years</option><option>2024</option><option>2023</option><option>2022</option></select>
+      <select name="sort" class="filter-select"><option>Rating ↓</option><option>Year (Newest)</option><option>Title A–Z</option></select>
+    </div>
+    <div class="search-wrap" style="max-width:260px;flex:1"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" name="q" placeholder="Search TV shows…" class="search-input"/></div>
+  </form>
+  <div class="genre-tabs">
+    <label for="t-all" class="g-tab">📺 All Shows</label>
+    <label for="t-dra" class="g-tab">🎭 Drama</label>
+    <label for="t-thr" class="g-tab">🔪 Thriller</label>
+    <label for="t-com" class="g-tab">😂 Comedy</label>
+    <label for="t-sci" class="g-tab">🚀 Sci-Fi</label>
+    <label for="t-cri" class="g-tab">🔍 Crime</label>
+    <label for="t-fan" class="g-tab">🧙 Fantasy</label>
+  </div>
+  <div class="tab-panel tv-all">
+      <div class="cards-grid">
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="Breaking Bad Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-breakingbad.html" class="c-link">View Details</a><div class="c-title">Breaking Bad</div><div class="c-meta"><span class="cy">2008</span><span class="cg">Drama</span><span class="cr">⭐ 9.5</span></div></div>
+        </div>
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="The Last of Us Poster" loading="lazy"/><span class="cbadge cb-new">New</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-lastofus.html" class="c-link">View Details</a><div class="c-title">The Last of Us</div><div class="c-meta"><span class="cy">2023</span><span class="cg">Drama</span><span class="cr">⭐ 8.7</span></div></div>
+        </div>
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://artworks.thetvdb.com/banners/v4/series/338186/backgrounds/614f91fd19349.jpg" alt="Succession Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-succession.html" class="c-link">View Details</a><div class="c-title">Succession</div><div class="c-meta"><span class="cy">2018</span><span class="cg">Drama</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/original/xU7GuzdAPbenxqdVCqKbRMH30M5.jpg" alt="Severance Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-severance.html" class="c-link">View Details</a><div class="c-title">Severance</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.7</span></div></div>
+        </div>
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/sHFlbKS3WLqMnp9t2ghADIJFnuQ.jpg" alt="The Bear Poster" loading="lazy"/><span class="cbadge cb-trend">Trending</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-thebear.html" class="c-link">View Details</a><div class="c-title">The Bear</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Comedy</span><span class="cr">⭐ 8.6</span></div></div>
+        </div>
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg" alt="Shogun Poster" loading="lazy"/><span class="cbadge cb-new">New</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-shogun.html" class="c-link">View Details</a><div class="c-title">Shogun</div><div class="c-meta"><span class="cy">2024</span><span class="cg">Drama</span><span class="cr">⭐ 8.9</span></div></div>
+        </div>
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://th.bing.com/th/id/R.61aab7a7648affdd59360827f3a48a8f?rik=eD6tVedUiUdRIg&pid=ImgRaw&r=0" alt="True Detective Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-truedetective.html" class="c-link">View Details</a><div class="c-title">True Detective</div><div class="c-meta"><span class="cy">2014</span><span class="cg">Crime</span><span class="cr">⭐ 9.0</span></div></div>
+        </div>
+        <div class="card genre-fantasy">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/z2yahl2uefxDCl0nogcRBstwruJ.jpg" alt="House of the Dragon Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-hotd.html" class="c-link">View Details</a><div class="c-title">House of the Dragon</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Fantasy</span><span class="cr">⭐ 8.4</span></div></div>
+        </div>
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/07/peaky-blinders-netflix-poster.jpg" alt="Peaky Blinders Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-peakyblinders.html" class="c-link">View Details</a><div class="c-title">Peaky Blinders</div><div class="c-meta"><span class="cy">2013</span><span class="cg">Crime</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="Stranger Things Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-strangerthings.html" class="c-link">View Details</a><div class="c-title">Stranger Things</div><div class="c-meta"><span class="cy">2016</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.7</span></div></div>
+        </div>
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w1280/5fhZdwP1DVJ0FyVH6vrFdHwpXIn.jpg" alt="Ted Lasso Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-tedlasso.html" class="c-link">View Details</a><div class="c-title">Ted Lasso</div><div class="c-meta"><span class="cy">2020</span><span class="cg">Comedy</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-thriller">
+          <div class="c-poster"><img src="https://images8.alphacoders.com/137/1375477.jpg" alt="Slow Horses Poster" loading="lazy"/><span class="cbadge cb-trend">Trending</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-slowhorses.html" class="c-link">View Details</a><div class="c-title">Slow Horses</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Thriller</span><span class="cr">⭐ 8.5</span></div></div>
+        </div>
+        <div class="card genre-thriller">
+          <div class="c-poster"><img src="https://superstarsbio.com/wp-content/uploads/2020/12/Mindhunter-poster.jpg" alt="Mindhunter Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-mindhunter.html" class="c-link">View Details</a><div class="c-title">Mindhunter</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Thriller</span><span class="cr">⭐ 8.6</span></div></div>
+        </div>
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://resizing.flixster.com/g6WGvi3ynvfItWC9RX206-jtkRM=/ems.ZW1zLXByZC1hc3NldHMvdHZzZXJpZXMvMDIyOTBmN2QtMzM0Yi00ODUxLWE0MWYtMmViYWJiOGViZjRkLmpwZw==" alt="Ozark Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-ozark.html" class="c-link">View Details</a><div class="c-title">Ozark</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Crime</span><span class="cr">⭐ 8.4</span></div></div>
+        </div>
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://m.media-amazon.com/images/M/MV5BMTk5NTk1Mzg3Ml5BMl5BanBnXkFtZTcwNDAyNzY3OA@@._V1_.jpg" alt="Black Mirror Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-blackmirror.html" class="c-link">View Details</a><div class="c-title">Black Mirror</div><div class="c-meta"><span class="cy">2011</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-fantasy">
+          <div class="c-poster"><img src="https://wallpaperaccess.com/full/7801342.jpg" alt="The Witcher Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-witcher.html" class="c-link">View Details</a><div class="c-title">The Witcher</div><div class="c-meta"><span class="cy">2019</span><span class="cg">Fantasy</span><span class="cr">⭐ 8.2</span></div></div>
+        </div>
+      </div>
+  </div>
+  <div class="tab-panel tv-dra">
+      <div class="cards-grid">
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="Breaking Bad Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-breakingbad.html" class="c-link">View Details</a><div class="c-title">Breaking Bad</div><div class="c-meta"><span class="cy">2008</span><span class="cg">Drama</span><span class="cr">⭐ 9.5</span></div></div>
+        </div>
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="The Last of Us Poster" loading="lazy"/><span class="cbadge cb-new">New</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-lastofus.html" class="c-link">View Details</a><div class="c-title">The Last of Us</div><div class="c-meta"><span class="cy">2023</span><span class="cg">Drama</span><span class="cr">⭐ 8.7</span></div></div>
+        </div>
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://artworks.thetvdb.com/banners/v4/series/338186/backgrounds/614f91fd19349.jpg" alt="Succession Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-succession.html" class="c-link">View Details</a><div class="c-title">Succession</div><div class="c-meta"><span class="cy">2018</span><span class="cg">Drama</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg" alt="Shogun Poster" loading="lazy"/><span class="cbadge cb-new">New</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-shogun.html" class="c-link">View Details</a><div class="c-title">Shogun</div><div class="c-meta"><span class="cy">2024</span><span class="cg">Drama</span><span class="cr">⭐ 8.9</span></div></div>
+        </div>
+        <div class="card genre-drama">
+          <div class="c-poster"><img src="https://images.wallpapersden.com/image/download/better-call-saul-poster_a25qa2mUmZqaraWkpJRoZWdlrWZsZWU.jpg" alt="Better Call Saul Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-breakingbad.html" class="c-link">View Details</a><div class="c-title">Better Call Saul</div><div class="c-meta"><span class="cy">2015</span><span class="cg">Drama</span><span class="cr">⭐ 8.9</span></div></div>
+        </div>
+      </div>
+  </div>
+  <div class="tab-panel tv-thr">
+      <div class="cards-grid">
+        <div class="card genre-thriller">
+          <div class="c-poster"><img src="https://images8.alphacoders.com/137/1375477.jpg" alt="Slow Horses Poster" loading="lazy"/><span class="cbadge cb-trend">Trending</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-slowhorses.html" class="c-link">View Details</a><div class="c-title">Slow Horses</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Thriller</span><span class="cr">⭐ 8.5</span></div></div>
+        </div>
+        <div class="card genre-thriller">
+          <div class="c-poster"><img src="https://superstarsbio.com/wp-content/uploads/2020/12/Mindhunter-poster.jpg" alt="Mindhunter Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-mindhunter.html" class="c-link">View Details</a><div class="c-title">Mindhunter</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Thriller</span><span class="cr">⭐ 8.6</span></div></div>
+        </div>
+        <div class="card genre-thriller">
+          <div class="c-poster"><img src="https://resizing.flixster.com/g6WGvi3ynvfItWC9RX206-jtkRM=/ems.ZW1zLXByZC1hc3NldHMvdHZzZXJpZXMvMDIyOTBmN2QtMzM0Yi00ODUxLWE0MWYtMmViYWJiOGViZjRkLmpwZw==" alt="Ozark Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-ozark.html" class="c-link">View Details</a><div class="c-title">Ozark</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Thriller</span><span class="cr">⭐ 8.4</span></div></div>
+        </div>
+        <div class="card genre-thriller">
+          <div class="c-poster"><img src="https://i.pinimg.com/originals/93/ac/67/93ac671e1a0becd7b858f30ba18e70b0.jpg" alt="Squid Game Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-strangerthings.html" class="c-link">View Details</a><div class="c-title">Squid Game</div><div class="c-meta"><span class="cy">2021</span><span class="cg">Thriller</span><span class="cr">⭐ 8.0</span></div></div>
+        </div>
+      </div>
+  </div>
+  <div class="tab-panel tv-com">
+      <div class="cards-grid">
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/sHFlbKS3WLqMnp9t2ghADIJFnuQ.jpg" alt="The Bear Poster" loading="lazy"/><span class="cbadge cb-trend">Trending</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-thebear.html" class="c-link">View Details</a><div class="c-title">The Bear</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Comedy</span><span class="cr">⭐ 8.6</span></div></div>
+        </div>
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w1280/5fhZdwP1DVJ0FyVH6vrFdHwpXIn.jpg" alt="Ted Lasso Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-tedlasso.html" class="c-link">View Details</a><div class="c-title">Ted Lasso</div><div class="c-meta"><span class="cy">2020</span><span class="cg">Comedy</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://th.bing.com/th/id/R.fda83fbc2823a777c56cd0f473f8b3b3?rik=fYV%2b06ZsQA0LPQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-3TT9m7JLW2M%2fVWbE1lYxHwI%2fAAAAAAAAXrs%2fH-P-OAeiqrg%2fs1600%2fWhat-We-Do-in-the-Shadows-Movie-Poster-Jemaine-Clement.jpg&ehk=YV4ElEwDTL1rCrb4MIqYq0BvzEVtWtoYogAsaddU%2feI%3d&risl=&pid=ImgRaw&r=0" alt="What We Do in the Shadows Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-wwdits.html" class="c-link">View Details</a><div class="c-title">What We Do in the Shadows</div><div class="c-meta"><span class="cy">2019</span><span class="cg">Comedy</span><span class="cr">⭐ 8.6</span></div></div>
+        </div>
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://th.bing.com/th/id/R.c39ab192b12462be3230ec6ee58fcb71?rik=ALtNfZVgJwaUlA&riu=http%3a%2f%2fwww.impawards.com%2ftv%2fposters%2fabbott_elementary_ver5_xlg.jpg&ehk=iRwaqJbEdOJzYnD5tFT4EbZS2OnXvgHNB4cPCFqRPRY%3d&risl=&pid=ImgRaw&r=0" alt="Abbott Elementary Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-abbottelementary.html" class="c-link">View Details</a><div class="c-title">Abbott Elementary</div><div class="c-meta"><span class="cy">2021</span><span class="cg">Comedy</span><span class="cr">⭐ 8.1</span></div></div>
+        </div>
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://m.media-amazon.com/images/I/81NK3yCvMJL.jpg" alt="The Office Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-succession.html" class="c-link">View Details</a><div class="c-title">The Office</div><div class="c-meta"><span class="cy">2005</span><span class="cg">Comedy</span><span class="cr">⭐ 8.9</span></div></div>
+        </div>
+        <div class="card genre-comedy">
+          <div class="c-poster"><img src="https://th.bing.com/th/id/R.e266fbeb942f71cf9f27d6157fd8c8ce?rik=AtWFGjtaEGUVzw&riu=http%3a%2f%2fwww.impawards.com%2ftv%2fposters%2fbrooklyn_nine_nine_ver7_xlg.jpg&ehk=lf8RccaHeclY9XdCAG%2frJOHG3MLi10CZvpC8rVFVw4M%3d&risl=&pid=ImgRaw&r=0" alt="Brooklyn Nine-Nine Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-strangerthings.html" class="c-link">View Details</a><div class="c-title">Brooklyn Nine-Nine</div><div class="c-meta"><span class="cy">2013</span><span class="cg">Comedy</span><span class="cr">⭐ 8.4</span></div></div>
+        </div>
+      </div>
+  </div>
+  <div class="tab-panel tv-sci">
+      <div class="cards-grid">
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/original/xU7GuzdAPbenxqdVCqKbRMH30M5.jpg" alt="Severance Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-severance.html" class="c-link">View Details</a><div class="c-title">Severance</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.7</span></div></div>
+        </div>
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="Stranger Things Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-strangerthings.html" class="c-link">View Details</a><div class="c-title">Stranger Things</div><div class="c-meta"><span class="cy">2016</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.7</span></div></div>
+        </div>
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://m.media-amazon.com/images/M/MV5BMTk5NTk1Mzg3Ml5BMl5BanBnXkFtZTcwNDAyNzY3OA@@._V1_.jpg" alt="Black Mirror Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-blackmirror.html" class="c-link">View Details</a><div class="c-title">Black Mirror</div><div class="c-meta"><span class="cy">2011</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://wallpapercave.com/wp/wp5243011.jpg" alt="Dark Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-severance.html" class="c-link">View Details</a><div class="c-title">Dark</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-scifi">
+          <div class="c-poster"><img src="https://tse3.mm.bing.net/th/id/OIP.jSEh7WMg0sHWHScMOZrQ9gHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="The Expanse Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-strangerthings.html" class="c-link">View Details</a><div class="c-title">The Expanse</div><div class="c-meta"><span class="cy">2015</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.5</span></div></div>
+        </div>
+      </div>
+  </div>
+  <div class="tab-panel tv-cri">
+      <div class="cards-grid">
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://th.bing.com/th/id/R.61aab7a7648affdd59360827f3a48a8f?rik=eD6tVedUiUdRIg&pid=ImgRaw&r=0" alt="True Detective Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-truedetective.html" class="c-link">View Details</a><div class="c-title">True Detective</div><div class="c-meta"><span class="cy">2014</span><span class="cg">Crime</span><span class="cr">⭐ 9.0</span></div></div>
+        </div>
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/07/peaky-blinders-netflix-poster.jpg" alt="Peaky Blinders Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-peakyblinders.html" class="c-link">View Details</a><div class="c-title">Peaky Blinders</div><div class="c-meta"><span class="cy">2013</span><span class="cg">Crime</span><span class="cr">⭐ 8.8</span></div></div>
+        </div>
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://resizing.flixster.com/g6WGvi3ynvfItWC9RX206-jtkRM=/ems.ZW1zLXByZC1hc3NldHMvdHZzZXJpZXMvMDIyOTBmN2QtMzM0Yi00ODUxLWE0MWYtMmViYWJiOGViZjRkLmpwZw==" alt="Ozark Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-ozark.html" class="c-link">View Details</a><div class="c-title">Ozark</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Crime</span><span class="cr">⭐ 8.4</span></div></div>
+        </div>
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://superstarsbio.com/wp-content/uploads/2020/12/Mindhunter-poster.jpg" alt="Mindhunter Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-mindhunter.html" class="c-link">View Details</a><div class="c-title">Mindhunter</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Crime</span><span class="cr">⭐ 8.6</span></div></div>
+        </div>
+        <div class="card genre-crime">
+          <div class="c-poster"><img src="https://images.wallpapersden.com/image/download/better-call-saul-poster_a25qa2mUmZqaraWkpJRoZWdlrWZsZWU.jpg" alt="Better Call Saul Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-breakingbad.html" class="c-link">View Details</a><div class="c-title">Better Call Saul</div><div class="c-meta"><span class="cy">2015</span><span class="cg">Crime</span><span class="cr">⭐ 8.9</span></div></div>
+        </div>
+      </div>
+  </div>
+  <div class="tab-panel tv-fan">
+      <div class="cards-grid">
+        <div class="card genre-fantasy">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/z2yahl2uefxDCl0nogcRBstwruJ.jpg" alt="House of the Dragon Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-hotd.html" class="c-link">View Details</a><div class="c-title">House of the Dragon</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Fantasy</span><span class="cr">⭐ 8.4</span></div></div>
+        </div>
+        <div class="card genre-fantasy">
+          <div class="c-poster"><img src="https://wallpaperaccess.com/full/7801342.jpg" alt="The Witcher Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-witcher.html" class="c-link">View Details</a><div class="c-title">The Witcher</div><div class="c-meta"><span class="cy">2019</span><span class="cg">Fantasy</span><span class="cr">⭐ 8.2</span></div></div>
+        </div>
+        <div class="card genre-fantasy">
+          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/mYLOqiStMxDK3fYZFirgrMt8z5d.jpg" alt="Rings of Power Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-ringsofpower.html" class="c-link">View Details</a><div class="c-title">Rings of Power</div><div class="c-meta"><span class="cy">2022</span><span class="cg">Fantasy</span><span class="cr">⭐ 6.9</span></div></div>
+        </div>
+        <div class="card genre-fantasy">
+          <div class="c-poster"><img src="https://wallpaperaccess.com/full/6226403.jpg" alt="Shadow and Bone Poster" loading="lazy"/><span class="cbadge cb-tv">TV</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+          <div class="c-info"><a href="detail-hotd.html" class="c-link">View Details</a><div class="c-title">Shadow and Bone</div><div class="c-meta"><span class="cy">2021</span><span class="cg">Fantasy</span><span class="cr">⭐ 7.6</span></div></div>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Cine<em>Mate</em></span>
+      <p class="footer-tag">A movie and TV show discovery app built as part of the Web Architectures course. JavaScript features coming week by week!<br>Web Architecture Project · 2026</p>
+    </div>
+    <div class="footer-col"><h4>Pages</h4><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="tv-shows.html">TV Shows</a></li>
+      <li><a href="favourites.html">Favourites</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Resources</h4><ul>
+      <li><a href="https://github.com" target="_blank">GitHub Repo</a></li>
+      <li><a href="https://www.themoviedb.org/" target="_blank">TMDB API</a></li>
+      <li><a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">© 2026 CineMate – Web Architectures Project &nbsp;⭐&nbsp; Vishmi</div>
+</footer>
+</body>
+</html>
