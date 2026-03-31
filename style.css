@@ -1,34 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap');
 :root {
   
-  --bg:        #141414;   
-  --bg2:       #000000;   
-  --bg3:       #1f1f1f;   
-  --bg4:       #2a2a2a;   
-  --amber:     #e50914;   
-  --amber-d:   #b20710;   
-  --amber-glow:rgba(229,9,20,.18);
-  --teal:      #ffffff;   
-  --teal-d:    #e5e5e5f7;  
-  --teal-glow: rgba(255,255,255,.08);
-  --purple:    #e50914;  
-  --purple-d:  #b20710;
-  --purple-glow:rgba(229,9,20,.15);
-  --red:       #e50914;   
-  --green:     #46d369;   
-  --cream:     #ffffff;  
-  --text:      #e5e5e5f7;   
-  --text-d:    #a3a3a3;   
-  --muted:     #757575;  
-  --border:    rgba(229,9,20,.2);
-  --border2:   rgba(255,255,255,.1);
-  --card:      #181818;   
-  --card2:     #2f2f2f;  
-  --r:         6px;       
-  --r-s:       4px;
-  --ease:      .28s cubic-bezier(.4,0,.2,1);
-  --sh:        0 16px 60px rgba(0,0,0,.8);
-  --sh2:       0 4px 24px rgba(0,0,0,.6);
+  --bg:#141414;--bg2:#000000; --bg3:#1f1f1f;--bg4:#2a2a2a;--amber:#e50914;--amber-d:#b20710;--amber-glow:rgba(229,9,20,.18);--teal:#ffffff;   
+  --teal-d:#e5e5e5f7;--teal-glow:rgba(255,255,255,.08);--purple:#e50914;--purple-d:#b20710;--purple-glow:rgba(229,9,20,.15);--red:#e50914;   
+  --green:#46d369;--cream:#ffffffc4;--text:#e5e5e5f7;--text-d:#a3a3a3;--muted:#757575;--border:rgba(229,9,20,.2);
+  --border2:rgba(255,255,255,.1);--card:#181818;--card2:#2f2f2f;--r:6px;--r-s:4px;--ease:.28s cubic-bezier(.4,0,.2,1);--sh:0 16px 60px rgba(0,0,0,.8);
+  --sh2:0 4px 24px rgba(0,0,0,.6);
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -988,3 +965,8 @@ body::before{
   object-position: center top;
   z-index: 0;
   border-radius: 16px;}
+
+.cb-classic{background:#8b5cf6;color:#fff}          
+.rating-high{color:#ffd700;font-weight:800}          
+.rating-mid{color:var(--cream);font-weight:700}     
+.rating-low{color:var(--red);font-weight:700} 

@@ -43,7 +43,8 @@
       <select name="year" class="filter-select"><option>All Years</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option></select>
       <select name="sort" class="filter-select"><option>Rating ↓</option><option>Year (Newest)</option><option>Title A–Z</option></select>
     </div>
-    <div class="search-wrap" style="max-width:260px;flex:1"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" name="q" placeholder="Search movies…" class="search-input"/></div>
+    <div class="search-wrap" style="max-width:260px;flex:1"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" name="q" placeholder="Search movies…" class="search-input"/><span class="search-hint">🔍</span></div>
+   <button type="submit" class="search-btn">Search</button>
   </form>
   <div class="genre-tabs">
     <label for="m-all" class="g-tab">🎬 All</label>
@@ -56,63 +57,7 @@
     <label for="m-ani" class="g-tab">🧸 Animation</label>
   </div>
   <div class="tab-panel mp-all">
-      <div class="cards-grid">
-        <div class="card genre-scifi">
-          <div class="c-poster"><img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2024/02/dune_-part-two-poster-2024.jpg" alt="Dune: Part Two Poster" loading="lazy"/><span class="cbadge cb-trend">Trending</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-dune2.html" class="c-link">View Details</a><div class="c-title">Dune: Part Two</div><div class="c-meta"><span class="cy">2024</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.5</span></div></div>
-        </div>
-        <div class="card genre-drama">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-oppenheimer.html" class="c-link">View Details</a><div class="c-title">Oppenheimer</div><div class="c-meta"><span class="cy">2023</span><span class="cg">Drama</span><span class="cr">⭐ 8.9</span></div></div>
-        </div>
-        <div class="card genre-action">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-darkknight.html" class="c-link">View Details</a><div class="c-title">The Dark Knight</div><div class="c-meta"><span class="cy">2008</span><span class="cg">Action</span><span class="cr">⭐ 9.0</span></div></div>
-        </div>
-        <div class="card genre-comedy">
-          <div class="c-poster"><img src="https://th.bing.com/th/id/R.a6c017f47128a2fd95d82bb2b67db7d8?rik=1iPWn3sumwh2pA&pid=ImgRaw&r=0" alt="The Grand Budapest Hotel Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-grandbudapest.html" class="c-link">View Details</a><div class="c-title">The Grand Budapest Hotel</div><div class="c-meta"><span class="cy">2014</span><span class="cg">Comedy</span><span class="cr">⭐ 8.1</span></div></div>
-        </div>
-        <div class="card genre-thriller">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasite Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-parasite.html" class="c-link">View Details</a><div class="c-title">Parasite</div><div class="c-meta"><span class="cy">2019</span><span class="cg">Thriller</span><span class="cr">⭐ 8.5</span></div></div>
-        </div>
-        <div class="card genre-scifi">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg" alt="Inception Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-inception.html" class="c-link">View Details</a><div class="c-title">Inception</div><div class="c-meta"><span class="cy">2010</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.8</span></div></div>
-        </div>
-        <div class="card genre-drama">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg" alt="The Shawshank Redemption Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-shawshank.html" class="c-link">View Details</a><div class="c-title">The Shawshank Redemption</div><div class="c-meta"><span class="cy">1994</span><span class="cg">Drama</span><span class="cr">⭐ 9.3</span></div></div>
-        </div>
-        <div class="card genre-drama">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/7fn624j5lj3xTme2SgiLCeuedmO.jpg" alt="Whiplash Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-whiplash.html" class="c-link">View Details</a><div class="c-title">Whiplash</div><div class="c-meta"><span class="cy">2014</span><span class="cg">Drama</span><span class="cr">⭐ 8.5</span></div></div>
-        </div>
-        <div class="card genre-horror">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/original/3TwpoxoUQTJfv3xMDZdqhOBj8ke.jpg" alt="Hereditary Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-hereditary.html" class="c-link">View Details</a><div class="c-title">Hereditary</div><div class="c-meta"><span class="cy">2018</span><span class="cg">Horror</span><span class="cr">⭐ 7.3</span></div></div>
-        </div>
-        <div class="card genre-animation">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" alt="Inside Out 2 Poster" loading="lazy"/><span class="cbadge cb-new">New</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-insideout2.html" class="c-link">View Details</a><div class="c-title">Inside Out 2</div><div class="c-meta"><span class="cy">2024</span><span class="cg">Animation</span><span class="cr">⭐ 7.6</span></div></div>
-        </div>
-        <div class="card genre-horror">
-          <div class="c-poster"><img src="https://tse4.mm.bing.net/th/id/OIP.c7D0XtSU6Q_HoMy4tFTI-AHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Get Out Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-getout.html" class="c-link">View Details</a><div class="c-title">Get Out</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Horror</span><span class="cr">⭐ 7.7</span></div></div>
-        </div>
-        <div class="card genre-scifi">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-interstellar.html" class="c-link">View Details</a><div class="c-title">Interstellar</div><div class="c-meta"><span class="cy">2014</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 8.6</span></div></div>
-        </div>
-        <div class="card genre-action">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/iADOJ8Zymht2JPMoy3R7xceZprc.jpg" alt="Furiosa Poster" loading="lazy"/><span class="cbadge cb-new">New</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-furiosa.html" class="c-link">View Details</a><div class="c-title">Furiosa</div><div class="c-meta"><span class="cy">2024</span><span class="cg">Action</span><span class="cr">⭐ 7.9</span></div></div>
-        </div>
-        <div class="card genre-animation">
-          <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg" alt="Spider-Man: Spider-Verse Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
-          <div class="c-info"><a href="detail-spiderverse.html" class="c-link">View Details</a><div class="c-title">Spider-Man: Spider-Verse</div><div class="c-meta"><span class="cy">2018</span><span class="cg">Animation</span><span class="cr">⭐ 8.4</span></div></div>
-        </div>
+      <div class="cards-grid" id="movies-grid">
       </div>
   </div>
   <div class="tab-panel mp-act">
@@ -146,7 +91,7 @@
   <div class="tab-panel mp-com">
       <div class="cards-grid">
         <div class="card genre-comedy">
-          <div class="c-poster"><img src="https://th.bing.com/th/id/R.a6c017f47128a2fd95d82bb2b67db7d8?rik=1iPWn3sumwh2pA&pid=ImgRaw&r=0" alt="The Grand Budapest Hotel Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
+           <div class="c-poster"><img src="https://th.bing.com/th/id/R.a6c017f47128a2fd95d82bb2b67db7d8?rik=1iPWn3sumwh2pA&pid=ImgRaw&r=0" alt="The Grand Budapest Hotel Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-grandbudapest.html" class="c-link">View Details</a><div class="c-title">The Grand Budapest Hotel</div><div class="c-meta"><span class="cy">2014</span><span class="cg">Comedy</span><span class="cr">⭐ 8.1</span></div></div>
         </div>
         <div class="card genre-comedy">
@@ -165,7 +110,7 @@
           <div class="c-poster"><img src="https://image.tmdb.org/t/p/original/5zMiji6nLQPW0N6rocXYVbQuJXo.jpg" alt="Knives Out Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-knivesout.html" class="c-link">View Details</a><div class="c-title">Knives Out</div><div class="c-meta"><span class="cy">2019</span><span class="cg">Comedy</span><span class="cr">⭐ 7.9</span></div></div>
         </div>
-       <div class="card genre-comedy">
+        <div class="card genre-comedy">
           <div class="c-poster"><img src="https://th.bing.com/th/id/R.4e44c90540bdad8eea879f55b4e12c83?rik=WH9SM5fYZjY1Yw&pid=ImgRaw&r=0" alt="The Death of Stalin Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-deathofstalin.html" class="c-link">View Details</a><div class="c-title">The Death of Stalin</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Comedy</span><span class="cr">⭐ 7.2</span></div></div>
         </div>
@@ -193,7 +138,7 @@
           <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" alt="Schindler's List Poster" loading="lazy"/><span class="cbadge cb-top">Top</span><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-schindler.html" class="c-link">View Details</a><div class="c-title">Schindler's List</div><div class="c-meta"><span class="cy">1993</span><span class="cg">Drama</span><span class="cr">⭐ 9.0</span></div></div>
         </div>
-        <div class="card genre-drama">
+         <div class="card genre-drama">
           <div class="c-poster"><img src="https://image.tmdb.org/t/p/original/9xVyZc92gUQLo3Fax1fMKG20XzC.jpg" alt="12 Years a Slave Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-12years.html" class="c-link">View Details</a><div class="c-title">12 Years a Slave</div><div class="c-meta"><span class="cy">2013</span><span class="cg">Drama</span><span class="cr">⭐ 8.1</span></div></div>
         </div>
@@ -201,7 +146,7 @@
   </div>
   <div class="tab-panel mp-hor">
       <div class="cards-grid">
-        <div class="card genre-horror">
+         <div class="card genre-horror">
           <div class="c-poster"><img src="https://tse4.mm.bing.net/th/id/OIP.c7D0XtSU6Q_HoMy4tFTI-AHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Get Out Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-getout.html" class="c-link">View Details</a><div class="c-title">Get Out</div><div class="c-meta"><span class="cy">2017</span><span class="cg">Horror</span><span class="cr">⭐ 7.7</span></div></div>
         </div>
@@ -245,7 +190,7 @@
           <div class="c-poster"><img src="https://image.tmdb.org/t/p/w342/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg" alt="Arrival Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-arrival.html" class="c-link">View Details</a><div class="c-title">Arrival</div><div class="c-meta"><span class="cy">2016</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 7.9</span></div></div>
         </div>
-        <div class="card genre-scifi">
+       <div class="card genre-scifi">
           <div class="c-poster"><img src="https://th.bing.com/th/id/R.d1d1447a4dfb31d49a02d2f1ed0d4e6f?rik=1AIlKzxU5gyrVw&riu=http%3a%2f%2fmedia.senscritique.com%2fmedia%2f000009739381%2fsource_big%2fEx_Machina.jpg&ehk=lyruDKiOzMw8wNvahDK%2bn9LP6HcMWvY5bc%2boYvp2GO4%3d&risl=&pid=ImgRaw&r=0" alt="Ex Machina Poster" loading="lazy"/><a href="favourites.html" class="cfav">♡</a><div class="card-shine"></div></div>
           <div class="c-info"><a href="detail-exmachina.html" class="c-link">View Details</a><div class="c-title">Ex Machina</div><div class="c-meta"><span class="cy">2014</span><span class="cg">Sci-Fi</span><span class="cr">⭐ 7.7</span></div></div>
         </div>
@@ -315,7 +260,7 @@
     <div class="footer-brand">
       <span class="footer-logo">Cine<em>Mate</em></span>
       <p class="footer-tag">A movie and TV show discovery app built as part of the Web Architectures course. JavaScript features coming week by week!<br>Web Architecture Project · 2026</p>
-    </div>
+     </div>
     <div class="footer-col"><h4>Pages</h4><ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="movies.html">Movies</a></li>
@@ -328,7 +273,9 @@
       <li><a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom">© 2025 CineMate – Web Architectures Project &nbsp;⭐&nbsp; Vishmi</div>
+  <div class="footer-bottom">© 2026 CineMate – Web Architectures Project &nbsp;⭐&nbsp; Vishmi</div>
 </footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>
